@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital,wght@0,400;1,400&display=swap');
+
+:root {
+  /* Exact Framer color variables */
+  --token-018a7c6f-8c8a-46e2-ab2e-6e162336024f: rgb(19, 23, 28);
+  --token-df9bb638-cd0d-4004-a040-6b75e7f75903: rgba(255, 255, 255, .02);
+  --token-8868b582-f0dc-4498-af50-217bc8cb054d: rgba(255, 255, 255, .05);
+  --token-c56ab205-36bf-45ec-bab7-00f16764e25b: rgba(255, 255, 255, .4);
+  --token-701b994a-337d-465e-9455-036ef7daea69: rgba(255, 255, 255, .7);
+  --token-39ee77ca-89de-4deb-aa65-1eb48b10e723: rgb(255, 255, 255);
+  --token-c6ae5900-f9b2-4ff8-82d7-4da77d91d9fd: rgb(4, 7, 10);
+  --token-5042c56f-ee57-459e-bd51-e8307a0268c1: rgb(163, 206, 255);
+  --token-d4e99b5c-c73d-43e8-883e-65bffed8c9de: rgba(255, 255, 255, .6);
+  --token-d94b34ca-bcd0-42d9-a7b0-d4219b9dbdfb: rgba(255, 255, 255, .5);
+  --token-234c064d-c2ac-4ac5-9346-806e4ea3d530: rgba(255, 255, 255, .1);
+  --token-912cdd0a-33e1-4df4-ac58-51ae9f3f48d9: rgba(255, 255, 255, .15);
+  --token-0a605297-868a-4f15-86d0-7a5b925b35fe: rgb(82, 162, 237);
+  --token-1a9a6da8-6dee-48fc-bd08-44f0705a41da: rgb(92, 168, 255);
+  --token-ac99de48-4936-4e63-ab1b-ce1fb82fd5bb: rgb(39, 46, 53);
+  --token-c442b7b1-6e1c-44bc-a656-f99c31195527: rgba(0, 140, 255, .1);
+  --token-1c7dd445-5524-49e3-be2d-519eb4f33d6d: rgb(0, 0, 0);
+
+  /* Simplified color variables for easier use */
+  --color-bg: var(--token-c6ae5900-f9b2-4ff8-82d7-4da77d91d9fd);
+  --color-text: var(--token-39ee77ca-89de-4deb-aa65-1eb48b10e723);
+  --color-text-dim: var(--token-701b994a-337d-465e-9455-036ef7daea69);
+  --color-accent: var(--token-0a605297-868a-4f15-86d0-7a5b925b35fe);
+  --color-accent-2: var(--token-5042c56f-ee57-459e-bd51-e8307a0268c1);
+}
+
+html, body, #root { 
+  height: 100%; 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+html, body { 
+  background: var(--color-bg); 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body { 
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; 
+  color: var(--color-text);
+  font-size: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p, figure {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+.headline-serif { font-family: "Instrument Serif", Georgia, serif; }
+.headline-inter { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+
+a { 
+  color: var(--color-text); 
+  text-decoration: none;
+}
+
+

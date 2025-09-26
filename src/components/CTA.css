@@ -1,0 +1,93 @@
+/* Exact Framer CTA styling */
+.cta-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+}
+
+.cta-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.cta-card {
+  backdrop-filter: blur(24px);
+  background: rgba(5, 7, 10, 0.73);
+  border-radius: 30px;
+  padding: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.cta-title {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.0;
+  color: var(--token-39ee77ca-89de-4deb-aa65-1eb48b10e723, #ffffff);
+  margin: 0;
+  text-align: center;
+}
+
+.cta-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4em;
+  letter-spacing: -0.01em;
+  color: var(--token-701b994a-337d-465e-9455-036ef7daea69, rgba(255, 255, 255, 0.7));
+  margin: 0;
+  text-align: center;
+}
+
+.cta-button {
+  background-color: var(--token-0a605297-868a-4f15-86d0-7a5b925b35fe, rgb(82, 162, 237));
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  box-shadow: inset 0px 0px 10px 0px rgba(255, 255, 255, 0.65), 0px 5px 18px 0px rgba(99, 176, 247, 0);
+  padding: 14px 26px;
+  color: var(--token-39ee77ca-89de-4deb-aa65-1eb48b10e723, #ffffff);
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  will-change: transform;
+}
+
+/* Responsive adjustments */
+@media (max-width: 809px) {
+  .cta-container {
+    padding: 0 24px;
+  }
+  
+  .cta-card {
+    padding: 32px 24px;
+  }
+  
+  .cta-title {
+    font-size: 32px;
+  }
+  
+  .cta-subtitle {
+    font-size: 18px;
+  }
+}

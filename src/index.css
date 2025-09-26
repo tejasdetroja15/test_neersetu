@@ -26,7 +26,7 @@ html,
 body,
 #root {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 body {
@@ -34,6 +34,7 @@ body {
   display: block;
   min-width: 320px;
   background: #04070a;
+  overflow: hidden; /* prevent body scroll so the snap container controls it */
 }
 
 h1 {

@@ -9,14 +9,28 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div style={{ minHeight: "100dvh", background: "#04070a" }}>
-      <Header />
-      <Hero />
-      {/* <Logos /> */}
-      <Features />
-      <Showcase />
-      <CTA />
-      <Footer />
+    <div className="snap-container">
+      <section className="auto-section">
+        <Header />
+      </section>
+      <section className="snap-section">
+        <Hero />
+      </section>
+      {/* <section className="snap-section">
+        <Logos />
+      </section> */}
+      <section className="snap-section">
+        <Showcase />
+      </section>
+      <section className="snap-section">
+        <Features />
+      </section>
+      <section className="auto-section">
+        <CTA />
+      </section>
+      <section className="auto-section">
+        <Footer />
+      </section>
     </div>
   );
 }

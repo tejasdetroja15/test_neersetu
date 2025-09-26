@@ -9,13 +9,40 @@ const Hero = () => {
         <div className="hero-glow-secondary"></div>
       </div>
 
+      <div class="hero-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+
       <div className="hero-content">
         <div className="hero-heading">
-          <p className="hero-kicker">AI-powered water solutions</p>
-          <h1 className="hero-title">NeerSetu</h1>
+          {/* <p className="hero-kicker">AI-powered water solutions</p> */}
+          <h1 className="hero-title">Govt Groundwater Chatbot,</h1>
+          <h1>At Your Fingertips</h1>
           <p className="hero-subtitle">
-            Smarter water resource planning and insights. Forecast demand,
-            monitor quality, and collaborate across stakeholders with clarity.
+            AI chatbot for instant analytics & predictions on groundwater
+            levels, based on Real-Time Govt Verified Data
           </p>
         </div>
 
@@ -27,12 +54,9 @@ const Hero = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <span className="btn-icon" aria-hidden="true">
-              ▶
-            </span>
-            Get Started
+            Chat now
           </a>
-          <a
+          {/* <a
             href="#learn-more"
             className="hero-button-secondary"
             aria-label="Learn more about NeerSetu"
@@ -41,10 +65,10 @@ const Hero = () => {
               ℹ
             </span>
             Learn More
-          </a>
+          </a> */}
         </div>
 
-        <div className="hero-stats" aria-label="Key highlights">
+        {/* <div className="hero-stats" aria-label="Key highlights">
           <div className="hero-stat">
             <span className="hero-stat-value">10k+</span>
             <span className="hero-stat-label">Communities served</span>
@@ -59,7 +83,7 @@ const Hero = () => {
             <span className="hero-stat-value">ISO</span>
             <span className="hero-stat-label">Data security</span>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

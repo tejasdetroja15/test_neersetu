@@ -8,6 +8,7 @@ import CTA from "./components/CTA";
 import Footer from "./components/Footer";
 import Working from "./components/Working";
 import Tech from "./components/Tech";
+import GroundwaterMap from "./components/GroundwaterMap";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
       </section> */}
       <section className="snap-section">
         <Features />
+      </section>
+      <section className="snap-section">
+        <GroundwaterMap />
       </section>
       <section className="auto-section">
         <CTA />

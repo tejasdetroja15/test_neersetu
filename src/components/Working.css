@@ -1,0 +1,252 @@
+/* How It Works Section Styles */
+.how-it-works-section {
+  background: #0a0a0a;
+  color: #ffffff;
+  padding: 80px 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.how-it-works-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 100%;
+}
+
+/* Header Styles */
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 80px;
+  gap: 24px;
+}
+
+.label-badge {
+  background-color: rgba(0, 140, 255, 0.1);
+  border-radius: 100px;
+  box-shadow: rgba(111, 190, 255, 0.3) 0px 0px 9px 0px inset;
+  padding: 12px 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label-text {
+  color: rgb(163, 206, 255);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.main-title h3 {
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+}
+
+/* Body Container */
+.body-container {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+/* Process Card Styles */
+.process-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  opacity: 1;
+  transform: none;
+}
+
+.process-card.reverse {
+  direction: rtl;
+}
+
+.process-card.reverse > * {
+  direction: ltr;
+}
+
+/* Mobile Wrap Styles */
+.mobile-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-ui {
+  position: relative;
+  width: 270px;
+  height: auto;
+  border-radius: inherit;
+}
+
+.mobile-ui img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+  object-position: center center;
+  object-fit: cover;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
+}
+
+/* Card Content Styles */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0;
+  text-align: left;
+}
+
+.card-description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  text-align: left;
+  max-width: 480px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .how-it-works-container {
+    padding: 0 32px;
+  }
+
+  .process-card {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .process-card.reverse {
+    direction: ltr;
+  }
+
+  .mobile-ui {
+    width: 240px;
+  }
+
+  .main-title h3 {
+    font-size: 44px;
+  }
+
+  .card-title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .card-description {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .body-container {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .how-it-works-section {
+    padding: 60px 0;
+  }
+
+  .how-it-works-container {
+    padding: 0 24px;
+  }
+
+  .heading-container {
+    margin-bottom: 60px;
+    gap: 20px;
+  }
+
+  .label-badge {
+    padding: 10px 20px;
+  }
+
+  .label-text {
+    font-size: 13px;
+  }
+
+  .main-title h3 {
+    font-size: 36px;
+  }
+
+  .mobile-ui {
+    width: 200px;
+  }
+
+  .card-title {
+    font-size: 28px;
+  }
+
+  .card-description {
+    font-size: 16px;
+  }
+
+  .process-card {
+    gap: 32px;
+  }
+
+  .body-container {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .how-it-works-section {
+    padding: 40px 0;
+  }
+
+  .how-it-works-container {
+    padding: 0 16px;
+  }
+
+  .main-title h3 {
+    font-size: 28px;
+  }
+
+  .mobile-ui {
+    width: 180px;
+  }
+
+  .card-title {
+    font-size: 24px;
+  }
+
+  .card-description {
+    font-size: 15px;
+  }
+
+  .label-badge {
+    padding: 8px 16px;
+  }
+
+  .body-container {
+    gap: 50px;
+  }
+}

@@ -1,0 +1,115 @@
+:root {
+  --primary-blue: #5ca8ff;
+  --glow-blue: rgba(92, 168, 255, 0.3);
+  --glow-purple: rgba(120, 82, 255, 0.2);
+  --dark-bg: #0a0a0a;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background-color: var(--dark-bg);
+  color: white;
+}
+
+.tech-section {
+  position: relative;
+  width: 100%;
+  padding: 120px 20px 150px;
+  background: linear-gradient(180deg, #0a0a0a 0%, #111111 100%);
+  text-align: center;
+  overflow: hidden;
+}
+
+.tech-heading {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 100px;
+  line-height: 1.2;
+}
+
+.icon-loop {
+  position: relative;
+  width: 600px;
+  height: 350px;
+  margin: auto;
+}
+
+.icon-container {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 20px rgba(92, 168, 255, 0.3),
+    0 0 30px rgba(92, 168, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.icon-container svg {
+  width: 50%;
+  height: 50%;
+  fill: var(--primary-blue);
+}
+
+.icon-container:hover {
+  transform: scale(1.15) translateY(-5px);
+}
+
+/* Position icons manually in an arc/circle */
+.icon-chart {
+  left: 10%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.icon-email {
+  left: 40%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+}
+.icon-calendar {
+  left: 60%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+}
+.icon-growth {
+  left: 85%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
+/* Background glow */
+.color-blur {
+  position: absolute;
+  bottom: -150px;
+  left: 50%;
+  width: 700px;
+  height: 400px;
+  background: radial-gradient(
+    circle at center,
+    var(--glow-blue),
+    var(--glow-purple),
+    transparent 80%
+  );
+  transform: translateX(-50%);
+  filter: blur(140px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Optional branding */
+.tech-section .branding {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.75rem;
+}

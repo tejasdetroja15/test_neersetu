@@ -12,10 +12,14 @@ const Showcase = () => {
   return (
     <section className="showcase-section" id="gallery">
       <div className="showcase-container">
-        <div className="showcase-header">
-          <h2 className="showcase-title">Gallery</h2>
-          <p className="showcase-subtitle">A peek at what you can build.</p>
+        {/* Mobile hero image */}
+        <div className="mobile-hero">
+          <img
+            src="https://framerusercontent.com/images/lN9vLOVnPrNHWk33J7bz1ahyxXs.png?scale-down-to=1024"
+            alt="Mobile app showcase"
+          />
         </div>
+
         <div className="showcase-marquee" aria-label="Scrolling gallery">
           <div className="marquee-track">
             {[...images, ...images].map((src, i) => (

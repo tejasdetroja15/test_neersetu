@@ -6,6 +6,8 @@ import Features from "./components/Features";
 import Showcase from "./components/Showcase";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
+import Working from "./components/Working";
+import Tech from "./components/Tech";
 
 function App() {
   return (
@@ -19,14 +21,20 @@ function App() {
       {/* <section className="snap-section">
         <Logos />
       </section> */}
-      <section className="snap-section">
+      {/* <section className="snap-section">
         <Showcase />
-      </section>
+      </section> */}
       <section className="snap-section">
         <Features />
       </section>
       <section className="auto-section">
         <CTA />
+      </section>
+      <section className="auto-section">
+        <Working />
+      </section>
+      <section className="auto-section">
+        <Tech />
       </section>
       <section className="auto-section">
         <Footer />

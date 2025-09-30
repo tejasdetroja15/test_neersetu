@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   padding: 100px 0;
-  background: linear-gradient(180deg, #0a0a0a 0%, #111 100%);
+  /* background: linear-gradient(180deg, #0a0a0a 0%, #111 100%); */
   color: white;
   text-align: center;
   overflow: hidden;

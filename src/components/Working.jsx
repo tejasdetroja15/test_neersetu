@@ -22,10 +22,7 @@ const Working = () => {
           <div className="process-card">
             <div className="mobile-wrap">
               <div className="mobile-ui">
-                <img
-                  src="src/assets/Working/img1.png"
-                  alt="Enter your idea interface"
-                />
+                <img src="/img1.png" alt="Enter your idea interface" />
               </div>
             </div>
             <div className="card-content">

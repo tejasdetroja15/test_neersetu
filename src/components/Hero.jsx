@@ -4,10 +4,10 @@ import "./Showcase.css";
 import Logos from "./Logos";
 
 const images = [
-  "src/assets/Showcase/img1.png",
-  "src/assets/Showcase/img2.png",
-  "src/assets/Showcase/img3.png",
-  "src/assets/Showcase/img4.png",
+  "/Showcase/img1.png",
+  "/Showcase/img2.png",
+  "/Showcase/img3.png",
+  "/Showcase/img4.png",
 ];
 
 const Hero = () => {

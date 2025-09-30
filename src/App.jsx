@@ -31,9 +31,9 @@ function App() {
       <section className="snap-section">
         <GroundwaterMap />
       </section>
-      <section className="auto-section">
+      {/* <section className="auto-section">
         <CTA />
-      </section>
+      </section> */}
       <section className="auto-section">
         <Working />
       </section>

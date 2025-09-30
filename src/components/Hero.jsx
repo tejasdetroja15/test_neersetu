@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import "./Showcase.css";
+import Logos from "./Logos";
 
 const images = [
   "src/assets/Showcase/img1.png",
@@ -136,6 +137,8 @@ const Hero = () => {
           </div>
         </div>
       </section>
+
+      <Logos />
     </>
   );
 };

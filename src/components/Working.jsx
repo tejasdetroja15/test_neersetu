@@ -23,7 +23,7 @@ const Working = () => {
             <div className="mobile-wrap">
               <div className="mobile-ui">
                 <img
-                  src="https://framerusercontent.com/images/tSbhXcBW10HVXPaJ6SsTTRiiplk.png"
+                  src="src/assets/Working/img1.png"
                   alt="Enter your idea interface"
                 />
               </div>

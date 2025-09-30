@@ -66,7 +66,7 @@ const Hero = () => {
             aria-label="Primary actions"
           >
             <a
-              href="http://localhost:3000"
+              href="https://neer-setu.vercel.app/"
               className="hero-button-primary"
               aria-label="Get started with NeerSetu"
               target="_blank"

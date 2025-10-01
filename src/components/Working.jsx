@@ -1,5 +1,5 @@
 import React from "react";
-import "./WOrking.css";
+import "./Working.css";
 
 const Working = () => {
   return (
@@ -22,10 +22,7 @@ const Working = () => {
           <div className="process-card">
             <div className="mobile-wrap">
               <div className="mobile-ui">
-                <img
-                  src="https://framerusercontent.com/images/tSbhXcBW10HVXPaJ6SsTTRiiplk.png"
-                  alt="Enter your idea interface"
-                />
+                <img src="/Img1.png" alt="Enter your idea interface" />
               </div>
             </div>
             <div className="card-content">

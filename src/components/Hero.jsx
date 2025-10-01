@@ -1,12 +1,13 @@
 import React from "react";
 import "./Hero.css";
 import "./Showcase.css";
+import Logos from "./Logos";
 
 const images = [
-  "src/assets/Showcase/img1.png",
-  "src/assets/Showcase/img2.png",
-  "src/assets/Showcase/img3.png",
-  "src/assets/Showcase/img4.png",
+  "/Showcase/img1.png",
+  "/Showcase/img2.png",
+  "/Showcase/img3.png",
+  "/Showcase/img4.png",
 ];
 
 const Hero = () => {
@@ -65,7 +66,7 @@ const Hero = () => {
             aria-label="Primary actions"
           >
             <a
-              href="http://localhost:3000"
+              href="https://neer-setu.vercel.app/"
               className="hero-button-primary"
               aria-label="Get started with NeerSetu"
               target="_blank"
@@ -136,6 +137,8 @@ const Hero = () => {
           </div>
         </div>
       </section>
+
+      <Logos />
     </>
   );
 };

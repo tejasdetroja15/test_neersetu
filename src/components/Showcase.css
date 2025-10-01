@@ -69,7 +69,7 @@
 .showcase-marquee {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -99,8 +99,17 @@
   display: inline-flex;
   gap: 24px;
   align-items: center;
-  animation: marquee-left 30s linear infinite;
+  animation: marquee-right 30s linear infinite;
   will-change: transform;
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .showcase-item {
@@ -133,7 +142,7 @@
 
   .marquee-track {
     gap: 16px;
-    animation-duration: 40s;
+    animation: marquee-right 40s linear infinite; /* also reversed for mobile */
   }
 
   .showcase-title {
@@ -149,7 +158,6 @@
     width: 280px;
   }
 
-  /* Adjust mobile hero for mobile - overlapping */
   .mobile-hero img {
     max-width: 300px;
     border-radius: 15px;
@@ -159,7 +167,6 @@
     height: 350px;
   }
 
-  /* Adjust blue sides for mobile */
   .showcase-marquee::before,
   .showcase-marquee::after {
     width: 50px;

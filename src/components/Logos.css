@@ -2,13 +2,73 @@
 .companies-section {
   position: relative;
   width: 100%;
-  height: auto;
+  height: fit-content;
   padding: 48px 0 24px;
 }
 
 .companies-container {
   position: relative;
   width: 100%;
+  .companies-section {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    position: relative;
+  }
+
+  .companies-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 12.5%,
+      rgba(0, 0, 0, 1) 87.5%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 12.5%,
+      rgba(0, 0, 0, 1) 87.5%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+
+  .companies-list {
+    display: flex;
+    gap: 64px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    animation: scroll 25s linear infinite;
+  }
+
+  .company-logo {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .company-logo img {
+    height: 30px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
   height: auto;
   display: flex;
   flex-direction: column;

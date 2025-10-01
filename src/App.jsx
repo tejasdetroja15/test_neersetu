@@ -4,7 +4,6 @@ import Hero from "./components/Hero";
 import Logos from "./components/Logos";
 import Features from "./components/Features";
 import Showcase from "./components/Showcase";
-import CTA from "./components/CTA";
 import Footer from "./components/Footer";
 import Working from "./components/Working";
 import Tech from "./components/Tech";
@@ -30,9 +29,6 @@ function App() {
       </section>
       <section className="snap-section">
         <GroundwaterMap />
-      </section>
-      <section className="auto-section">
-        <CTA />
       </section>
       <section className="auto-section">
         <Working />
